@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас - Бургерная</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'nav.css' %}">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="{% url 'home' %}" class="logo">
+                <img src="{% static 'images/logo.png' %}" alt="Логотип Бургерной" width="200" height="150">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="{% url 'home' %}">О нас</a></li>
+                    <li><a href="{% url 'menu' %}">Меню</a></li>
+                    <li><a href="{% url 'contacts' %}">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="about-us">
+            <h1>Добро пожаловать в нашу бургерную!</h1>
+            <p>Мы предлагаем лучшие бургеры в городе, приготовленные из самых свежих ингредиентов.</p>
+            <div class="video_button">
+                <a href="{% url 'menu' %}" target="_blank">Посмотреть меню</a>
+            </div>
+        </section>
+
+        <section class="highlights">
+            <h2>Что мы предлагаем:</h2>
+            <div class="highlights-container">
+                <div class="highlight">
+                    <img src="{% static 'images/highlight_fresh_ingredients.png' %}" alt="Свежие ингредиенты" class="highlight-image">
+                    <h3>Свежие ингредиенты</h3>
+                    <p>Мы используем только самые свежие продукты для наших бургеров.</p>
+                </div>
+                <div class="highlight">
+                    <img src="{% static 'images/highlight_chefs.png' %}" alt="Опытные шеф-повара" class="highlight-image">
+                    <h3>Опытные шеф-повара</h3>
+                    <p>Наши шеф-повара известны своим мастерством и креативностью.</p>
+                </div>
+                <div class="highlight">
+                    <img src="{% static 'images/highlight_atmosphere.png' %}" alt="Уютная атмосфера" class="highlight-image">
+                    <h3>Уютная атмосфера</h3>
+                    <p>Создаем идеальную атмосферу для приятного времея припровождения.</p>
+                </div>
+                <div class="highlight">
+                    <img src="{% static 'images/highlight_delivery.png' %}" alt="Быстрая доставка" class="highlight-image">
+                    <h3>Быстрая доставка</h3>
+                    <p>Доставляем ваши бургерные мечты прямо к вам домой.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contact-info">
+            <p><strong>Адрес:</strong> Главная ул., 1, Москва</p>
+            <p><strong>Телефон:</strong> +7 (495) 123-45-67</p>
+            <p><strong>Email:</strong> info@burgerna.ru</p>
+        </div>
+        <div class="social-links">
+            <a href="#"><img src="{% static 'images/icons/vk.png' %}" alt="Вконтакте"></a>
+        </div>
+    </footer>
+</body>
+</html>

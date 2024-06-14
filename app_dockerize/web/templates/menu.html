@@ -1,0 +1,131 @@
+    <!DOCTYPE html>
+    <html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Меню - Бургерная</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/menu.css' %}">
+        <link rel="stylesheet" href="{% static 'nav.css' %}">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <a href="{% url 'home' %}" class="logo">
+                    <img src="{% static 'images/logo.png' %}" alt="Логотип Бургерной" width="200" height="150">
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="{% url 'home' %}">О нас</a></li>
+                        <li><a href="{% url 'menu' %}">Меню</a></li>
+                        <li><a href="{% url 'contacts' %}">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="menu-section">
+                <h1>Наше Меню</h1>
+
+                <h2>Бургеры</h2>
+                <div class="menu-category">
+                    <div class="menu-row">
+                        <div class="menu-item">
+                            <img src="{% static 'images/burgers/burger1.png' %}" alt="Бургер 1">
+                            <h3>Классический бургер</h3>
+                            <p>350 ₽</p>
+                        </div>
+                        <div class="menu-item">
+                            <img src="{% static 'images/burgers/burger2.png' %}" alt="Бургер 2">
+                            <h3>Чизбургер</h3>
+                            <p>400 ₽</p>
+                        </div>
+                    </div>
+                    <div class="menu-row">
+                        <div class="menu-item">
+                            <img src="{% static 'images/burgers/burger3.png' %}" alt="Бургер 3">
+                            <h3>Беконбургер</h3>
+                            <p>450 ₽</p>
+                        </div>
+                        <div class="menu-item">
+                            <img src="{% static 'images/burgers/burger4.png' %}" alt="Бургер 4">
+                            <h3>Двойной пупер бургер</h3>
+                            <p>370 ₽</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h2>Закуски</h2>
+                <div class="menu-category">
+                    <div class="menu-row">
+                        <div class="menu-item">
+                            <img src="{% static 'images/snacks/snack1.png' %}" alt="Закуска 1">
+                            <h3>Нагетсы</h3>
+                            <p>150 ₽</p>
+                        </div>
+                        <div class="menu-item">
+                            <img src="{% static 'images/snacks/snack2.png' %}" alt="Закуска 2">
+                            <h3>Креветки во фритюре</h3>
+                            <p>200 ₽</p>
+                        </div>
+                    </div>
+                    <div class="menu-row">
+                        <div class="menu-item">
+                            <img src="{% static 'images/snacks/snack3.png' %}" alt="Закуска 3">
+                            <h3>Луковые кольца</h3>
+                            <p>300 ₽</p>
+                        </div>
+                        <div class="menu-item">
+                            <img src="{% static 'images/snacks/snack4.png' %}" alt="Закуска 4">
+                            <h3>Картофель фри</h3>
+                            <p>250 ₽</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h2>Напитки</h2>
+                <div class="menu-category">
+                    <div class="menu-row">
+                        <div class="menu-item">
+                            <img src="{% static 'images/drinks/drink1.png' %}" alt="Напиток 1">
+                            <h3>Кола</h3>
+                            <p>50 ₽</p>
+                        </div>
+                        <div class="menu-item">
+                            <img src="{% static 'images/drinks/drink2.png' %}" alt="Напиток 2">
+                            <h3>Фанта</h3>
+                            <p>50 ₽</p>
+                        </div>
+                    </div>
+                    <div class="menu-row">
+                        <div class="menu-item">
+                            <img src="{% static 'images/drinks/drink3.png' %}" alt="Напиток 3">
+                            <h3>Спрайт</h3>
+                            <p>100 ₽</p>
+                        </div>
+                        <div class="menu-item">
+                            <img src="{% static 'images/drinks/drink4.png' %}" alt="Напиток 4">
+                            <h3>Липтон</h3>
+                            <p>50 ₽</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="contact-info">
+                <p><strong>Адрес:</strong> Главная ул., 1, Москва</p>
+                <p><strong>Телефон:</strong> +7 (495) 123-45-67</p>
+                <p><strong>Email:</strong> info@burgerna.ru</p>
+            </div>
+            <div class="social-links">
+                <a href="#"><img src="{% static 'images/icons/vk.png' %}" alt="Вконтакте"></a>
+            </div>
+        </footer>
+    </body>
+    </html>

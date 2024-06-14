@@ -1,0 +1,123 @@
+/* Основные стили для страницы меню */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .logo img {
+    vertical-align: middle;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.menu-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.menu-section h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.menu-category {
+    margin: 20px 0;
+}
+
+.menu-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* позволяет реагировать на размер экрана */
+    margin-bottom: 20px;
+}
+
+/* Изменения к .menu-item и .menu-item img для исправления отображения изображений */
+.menu-item {
+    flex: 1 1 calc(50% - 20px); /* каждая картинка занимает 50% ширины родительского контейнера */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.3s;
+    text-align: center;
+    margin: 10px; /* расстояние между элементами */
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+    max-height: 200px; /* Устанавливаем максимальную высоту изображения */
+    display: block;
+    margin: 0 auto; /* Центрируем изображение */
+    object-fit: contain; /* Свойство object-fit "contain" заставит изображение сохранять пропорции */
+}
+
+.menu-item h3 {
+    margin: 10px 0;
+}
+
+.menu-item p {
+    color: #666;
+    padding: 0 10px 20px;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer .contact-info p {
+    margin: 5px 0;
+}
+
+footer .social-links img {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    filter: invert(48%) sepia(95%) saturate(2918%) hue-rotate(185deg) brightness(91%) contrast(88%);
+}

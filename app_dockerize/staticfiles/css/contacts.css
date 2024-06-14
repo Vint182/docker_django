@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header .logo img {
+    display: block;
+    margin: 0 auto;
+}
+
+header nav {
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+main {
+    padding: 20px 0;
+}
+
+.contact-section h1, .contact-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.contact-info p {
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ff4040;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+}
+
+button:hover {
+    background: #e63535;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.social-links img {
+    width: 30px;
+    margin: 0 10px;
+    filter: invert(48%) sepia(95%) saturate(2918%) hue-rotate(185deg) brightness(91%) contrast(88%);
+}

@@ -1,0 +1,182 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* Градиент для фона страницы */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+header {
+    background: linear-gradient(135deg, #333, #555); /* Градиент для фона шапки */
+    color: #fff;
+    padding: 10px 0;
+}
+
+header .logo img {
+    display: block;
+    margin: 0 auto;
+}
+
+header nav {
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* main {
+    padding: 20px 0;
+    background: url('images/background.jpg') no-repeat center center fixed;  Фон с изображением для main 
+    background-size: cover;  Подгонка изображения под экран } */
+
+.about-us {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.about-us h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-weight: 700;
+    color: #333; /* Темный цвет для контраста */
+}
+
+.video_button a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ff4040;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.highlights h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #333;
+}
+
+.highlights-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.highlight {
+    flex: 1;
+    text-align: center;
+    margin: 15px;
+    max-width: 250px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.highlight:hover {
+    transform: scale(1.05);
+}
+
+.highlight img {
+    max-width: 100px;
+    margin-bottom: 15px;
+}
+
+.highlight h3 {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #333;
+}
+
+.highlight p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+footer {
+    background: linear-gradient(135deg, #333, #555); /* Градиент для фона подвала */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.social-links img {
+    width: 30px;
+    margin: 0 10px;
+    filter: invert(48%) sepia(95%) saturate(2918%) hue-rotate(185deg) brightness(91%) contrast(88%);
+}
+
+.highlights-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.highlight {
+    flex: 1 1 200px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.3s;
+}
+
+.highlight:hover {
+    transform: scale(1.05);
+}
+
+.highlight-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 150px; /* Устанавливаем максимальную высоту изображения */
+}
+
+.highlight h3 {
+    margin: 20px 0 10px;
+    font-size: 1.5em;
+}
+
+.highlight p {
+    padding: 0 20px 20px;
+    color: #666;
+}
+
+/* Стили для иконок изображений */
+.icon {
+    width: 100px; /* Ширина иконок */
+    height: 100px; /* Высота иконок */
+    object-fit: cover; /* Сохранение пропорций изображения внутри заданной области */
+}
